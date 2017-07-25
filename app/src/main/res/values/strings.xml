@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DTPicker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="date_select">时间选择器</string>
+    <string name="date_select1">时间选择器1</string>
+    <string name="date_select2">时间选择器2</string>
+    <string name="date_select3">时间选择器3</string>
+    <string name="_year">年</string>
+    <string name="_month">月</string>
+    <string name="_day">日</string>
+    <string name="_hour">时</string>
+    <string name="_second">分</string>
+    <string name="_confirm">确定</string>
+    <string name="_cancel">取消</string>
+    <string name="_select_date">日期时间组合选择页面</string>
+</resources>
