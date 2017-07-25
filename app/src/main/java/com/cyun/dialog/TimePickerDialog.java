@@ -1,4 +1,4 @@
-package com.cyun.dtpicker;
+package com.cyun.dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.view.animation.AnticipateOvershootInterpolator;
 import android.widget.TextView;
 
+import com.cyun.dtpicker.R;
 import com.wheel.StrericWheelAdapter;
 import com.wheel.WheelView;
 
@@ -216,7 +217,7 @@ public class TimePickerDialog extends Dialog implements View.OnClickListener {
                         .append(dayWheel.getCurrentItemValue());
 
                 // 校验时间格式是否正确
-                if (!isValidDate(sb.toString())) {
+                if (!validateDate(sb.toString())) {
                     if (listener != null) {
                         listener.onErrorDate(sb.toString());
                     }
@@ -247,7 +248,7 @@ public class TimePickerDialog extends Dialog implements View.OnClickListener {
     /**
      * 判断选择的日期是否正确
      */
-    public static boolean isValidDate(String sDate) {
+    private static boolean validateDate(String sDate) {
         String datePattern1 = "\\d{4}-\\d{2}-\\d{2}";
         String datePattern2 = "^((\\d{2}(([02468][048])|([13579][26]))"
                 + "[\\-/\\s]?((((0?[13578])|(1[02]))[\\-/\\s]?((0?[1-9])|([1-2][0-9])|"
