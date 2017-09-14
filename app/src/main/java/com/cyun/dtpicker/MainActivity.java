@@ -96,8 +96,7 @@ public class MainActivity extends Activity {
     public void buttonClick1(View v) {
         int id = v.getId();
         if (id == R.id.pick_bt1) {
-            View view = ((LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE))
-                    .inflate(R.layout.time_picker, null);
+            View view = ((LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.time_picker, null);
 
             Calendar calendar = Calendar.getInstance();
             int curYear = calendar.get(Calendar.YEAR);
@@ -157,9 +156,8 @@ public class MainActivity extends Activity {
                     dialog.cancel();
                 }
             });
-            if (!isFinishing()) {
+            if (!isFinishing())
                 builder.show();
-            }
         }
     }
 
@@ -182,9 +180,8 @@ public class MainActivity extends Activity {
                 Toast.makeText(MainActivity.this, errorDate + "是无效日期", Toast.LENGTH_SHORT).show();
             }
         });
-        if (!isFinishing()) {
+        if (!isFinishing())
             timePickerDialog.show();
-        }
     }
 
     public void buttonClick3(View view) {
@@ -201,8 +198,7 @@ public class MainActivity extends Activity {
                 Toast.makeText(MainActivity.this, errorDate + "是无效日期", Toast.LENGTH_SHORT).show();
             }
         });
-        if (!isFinishing()) {
+        if (!isFinishing())
             pickerDialog.show();
-        }
     }
 }

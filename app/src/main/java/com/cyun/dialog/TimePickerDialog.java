@@ -68,7 +68,7 @@ public class TimePickerDialog extends Dialog implements View.OnClickListener {
         this.listener = listener;
     }
 
-    protected TimePickerDialog(Context context) {
+    public TimePickerDialog(Context context) {
         super(context);
         initDialog(context);
     }

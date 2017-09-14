@@ -24,5 +24,4 @@
             android:theme="@style/DialogTiem" />
         <activity android:name=".MainActivity" />
     </application>
-
 </manifest>
